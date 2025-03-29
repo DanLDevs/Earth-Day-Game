@@ -7,7 +7,6 @@ signal trash_collected(trash_type)
 func _ready():
 	# Add to the trash group
 	add_to_group("trash")
-	print("Trash item initialized and added to trash group:", self.name)
 	
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"): # Ensure it's the player
